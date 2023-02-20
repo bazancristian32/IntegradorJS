@@ -57,43 +57,43 @@
     flex-direction: column;
     width: 20%;
   }
-  
+
   .title__img h4 {
     font-size: 40px;
     padding-top: 40px;
     margin-top: 30px;
   }
-  
+
   .img__buy {
     width: 200px;
     height: 100px;
     filter: drop-shadow(5px 0px 80px);
     margin-top: 30px;
   }
-  
+
   .info {
     width: 85%;
     height: 50px;
     margin-top: 10px;
     padding: 10px 4px;
   }
-  
+
   .info p {
     text-align: center;
     font-size: 19px;
     color: var(--text3);
   }
-  
+
   .cart__precio {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
-    padding: 30px 0px  20px  0px;
+    padding: 30px 0px 20px 0px;
     gap: 35px;
     margin-top: 5px;
   }
-  
+
   .cart__precio span {
     font-size: 24px;
   }
@@ -105,14 +105,14 @@
     width: 100%;
     gap: 30px;
   }
-  
+
   .emprendimiento h2 {
     font-size: 46px;
     color: var(--text2);
     font-weight: 100;
     letter-spacing: 1px;
   }
-  
+
   .emprendimiento p {
     font-size: 17px;
     width: 85%;
@@ -121,7 +121,7 @@
   .logo__copy {
     display: none;
   }
-  
+
   .contactos__conteiner {
     display: flex;
     width: 100%;
@@ -129,32 +129,31 @@
     justify-content: space-evenly;
     align-items: center;
   }
-  
+
   .card__contactos {
     width: 90px;
     height: 330px;
     gap: 10px;
   }
-  
+
   .card__contactos h4 {
     font-size: 21px;
   }
-  
+
   .list__contact {
     gap: 30px;
   }
-  
+
   .list__info {
     font-size: 14px;
     letter-spacing: 1px;
   }
-  
+
   .contact__a {
     color: #faeeea;
   }
   .logo__copy p {
     color: var(--text2);
     text-align: center;
-  
   }
 }
