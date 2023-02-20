@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;500&family=PT+Sans+Narrow:wght@700&display=swap");
+
+:root {
+  /* TEXT */
+  --title: #4d703b;
+  --text: #002a00;
+  --text2: #faeeea;
+  --text3: #98a0a8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inconsolata";
+}
+header {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #002a00;
+  position: fixed;
+}
+
+.logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.title_logo {
+  font-size: 30px;
+  color: var(--text3);
+  font-weight: 300;
+}
+.svg__logo {
+  width: 23px;
+  height: 70px;
+}
+
+.container__list {
+  width: 45%;
+  height: 100%;
+}
+
+.list__nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+.list {
+  color: var(--text2);
+  font-size: 18px;
+}
+
+.svg {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  gap: 23px;
+}
+
+.svg__nav {
+  width: 30px;
+  height: 20px;
+}
+
+#hero {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 90px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.card__gigant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 300px;
+}
+
+.card__gigant h1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 65px;
+  height: 300px;
+  color: var(--text3);
+  letter-spacing: 9px;
+  font-weight: 100;
+}
+.card__gigant p {
+  width: 60%;
+  height: 90%;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 70px;
+}
+
+#buy {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 150px;
+}
+.big__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  border: solid 1px;
+  width: 190px;
+  height: 390px;
+  padding: 40px 20px;
+  border: solid 2px black;
+  gap: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.title__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.title__img h4 {
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+.img__buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 100px;
+  filter: drop-shadow(5px 0px 80px);
+  margin-top: 30px;
+}
+
+.info {
+  width: 85%;
+  height: 150px;
+  margin-top: 30px;
+}
+
+.info p {
+  text-align: center;
+  font-size: 16px;
+  color: var(--text3);
+}
+
+.cart__precio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.cart__precio span {
+  font-size: 25px;
+}
+
+.beneficios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 500px;
+  gap: 30px;
+  background-color: var(--title);
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.beneficios h2 {
+  font-size: 27px;
+  letter-spacing: 5px;
+  line-height: 1;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  color: #98a0a8;
+  font-weight: 100;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.beneficios p {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--text2);
+  text-align: center;
+  margin-bottom: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+button {
+  background-color: #002a00;
+  border: 0;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button a {
+  color: var(--text2);
+  font-size: 16px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #002a00;
+  margin-top: 30px;
+  padding: 60px 0px 80px 0px;
+}
+
+.emprendimiento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+
+.emprendimiento h2 {
+  font-size: 50px;
+  color: var(--text2);
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+.emprendimiento p {
+  color: var(--text2);
+  font-size: 19px;
+  line-height: 2;
+  text-align: center;
+  width: 75%;
+  margin-top: 30px;
+}
+#buy_2{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 85px 0px;
+}
+
+.buy_2_reverse{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+#contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/1171598.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.logo__copy {
+  display: flex;
+  width: 20%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contactos__conteiner {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card__contactos {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__contactos h4 {
+  font-size: 25px;
+  color: #98a0a8;
+}
+
+.list__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list__info {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.contact__a {
+  color: #faeeea;
+}
+.logo__copy p {
+  color: var(--text2);
+  text-align: center;
+
+}
