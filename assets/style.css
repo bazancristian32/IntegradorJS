@@ -25,6 +25,7 @@ header {
   flex-direction: row;
   background-color: #002a00;
   position: fixed;
+  z-index: 1;
 }
 
 .logo {
@@ -153,6 +154,31 @@ header {
   height: 100%;
   gap: 20px;
 }
+.beneficios {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--title);
+  width: 400px;
+  height: 450px;
+}
+
+.beneficios h2 {
+  text-align: center;
+  color: #98a0a8;
+  font-weight: 100;
+  width: 85%;
+}
+
+.beneficios p {
+  text-align: center;
+  color: #faeeea;
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 40px;
+  padding: 0px 25px;
+}
 
 .card {
   display: flex;
@@ -216,13 +242,22 @@ header {
 .cart__precio span {
   font-size: 25px;
 }
+.contenedor_filtro_planta {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
 
-.beneficios {
+.filtro {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 30%;
+  width: 65%;
   height: 500px;
   gap: 30px;
   background-color: var(--title);
@@ -230,11 +265,12 @@ header {
   border-radius: 5px;
 }
 
-.beneficios h2 {
+.filtro h2 {
   font-size: 27px;
   letter-spacing: 5px;
   line-height: 1;
   width: 80%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,7 +282,7 @@ header {
   text-align: center;
 }
 
-.beneficios p {
+.filtro p {
   font-weight: 400;
   font-size: 18px;
   color: var(--text2);
@@ -254,6 +290,138 @@ header {
   margin-bottom: 40px;
   margin-left: 15px;
   margin-right: 15px;
+}
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 80px;
+  width: 90%;
+  height: 85%;
+}
+.card__categorie {
+  width: 85%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  height: 75%;
+  border: solid 1px beige;
+  padding-top: 20px;
+  background-color: #faeeea;
+  border-radius: 20px;
+}
+
+.card__categorie {
+  color: #4d703b;
+  font-size: 21px;
+  padding: 20px;
+}
+.contenedor__categorie {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 90%;
+  padding: 20px 35px;
+}
+.label__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.card__planta__filtro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--title);
+  width: 320px;
+  height: 550px;
+  flex-direction: column;
+}
+
+.img_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 60%;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  gap: 30px;
+}
+
+.img_title h4,
+h5 {
+  color: #98a0a8;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.img__planta__ideal {
+  width: 180px;
+  height: 210px;
+  filter: drop-shadow(10px 10px 22px);
+}
+
+.info__precio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 40%;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.info__precio p {
+  color: #faeeea;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.info__precio span {
+  color: #faeeea;
+  font-size: 28px;
+}
+
+.compra__planta {
+  color: #faeeea;
+  width: 45px;
+  height: 10px;
+}
+
+.cart__precio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 65%;
+}
+
+
+.item__cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 30px;
+  background-color: #faeeea;
+  border-radius: 50px;
+  padding: 10px;
+  border: solid 1px var(--text);
+}
+
+.cart__precio span{
+  color: #faeeea;
+  font-weight: 100;
 }
 
 button {
@@ -303,19 +471,74 @@ button a {
   width: 75%;
   margin-top: 30px;
 }
-#buy_2{
+#buy_2 {
   display: flex;
   justify-content: end;
   align-items: center;
   padding: 85px 0px;
 }
 
-.buy_2_reverse{
+#compra{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
 }
+
+.card_padre_buy{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+gap: 20px;
+flex-wrap: wrap;
+flex-direction: row;
+width: 100%;
+
+}
+
+.card_de_compra{
+  background-color: var(--title);
+  width: 420px;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  padding-top: 20px;
+}
+
+.title_img__{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+  height:100%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title_img__ h4{
+  font-size: 40px;
+  color: #98a0a8;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.info__buy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 30%;
+}
+
+.info__buy p{
+  color: #faeeea;
+  font-size: 17px;
+  text-align: center;
+
+}
+
 #contacto {
   display: flex;
   justify-content: center;
@@ -382,5 +605,4 @@ button a {
 .logo__copy p {
   color: var(--text2);
   text-align: center;
-
 }
